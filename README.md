@@ -1,2 +1,1 @@
-# HackerRankPrgs
-#HackerrankPractice
+# HackerRankProgs
