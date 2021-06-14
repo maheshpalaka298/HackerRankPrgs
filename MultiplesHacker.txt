@@ -1,0 +1,40 @@
+/*To Print Multiples of a given number*/
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+public class MultiplesHacker {
+    public static void main(String[] args) throws IOException {
+        Scanner sc=new Scanner(System.in);
+        int multi;
+		System.out.println("Enter a number to print multiple");
+        multi=sc.nextInt();
+        sc.close();
+        for(int i=1;i<=15;i++){
+            System.out.format("%d x %2d = %3d%n",multi,i,i*multi);
+        }
+    }
+}
+
+//Output//
+Enter a number to print multiple
+5
+5 x  1 =   5
+5 x  2 =  10
+5 x  3 =  15
+5 x  4 =  20
+5 x  5 =  25
+5 x  6 =  30
+5 x  7 =  35
+5 x  8 =  40
+5 x  9 =  45
+5 x 10 =  50
+5 x 11 =  55
+5 x 12 =  60
+5 x 13 =  65
+5 x 14 =  70
+5 x 15 =  75
+Press any key to continue . . .

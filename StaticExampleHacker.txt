@@ -1,0 +1,48 @@
+/*To Print Height and Breadth and area usng static*/
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class StaticExampleHacker {
+    public static int B;
+    public static int H;
+    public static boolean flag;
+    
+    static {
+        Scanner sc=new Scanner(System.in);
+		System.out.println("Enter  Breadth");
+        B=sc.nextInt();
+		System.out.println("Enter  Height");
+        H=sc.nextInt();
+        sc.close();
+        if(B<=0 || H<=0){
+            System.out.println("java.lang.Exception: Breadth and height must be positive");
+           flag = false;
+       } else{
+           flag = true;
+       }
+    }
+public static void main(String[] args){
+		if(flag){
+			int area=B*H;
+			System.out.println("the area is "+area);
+		}	
+	}
+}
+
+//Output//
+Enter  Breadth
+-24
+Enter  Height
+35
+java.lang.Exception: Breadth and height must be positive
+Press any key to continue . . 
+//Output2//
+Enter  Breadth
+67
+Enter  Height
+45
+the area is 3015
+Press any key to continue . . ..

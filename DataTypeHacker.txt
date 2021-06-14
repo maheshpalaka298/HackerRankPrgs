@@ -1,0 +1,68 @@
+/*To Print what type Datatype*/
+import java.util.*;
+import java.io.*;
+class DataTypeHacker{
+    public static void main(String []argh)
+    {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter No of data constants");
+        int t=sc.nextInt();
+		System.out.println("Enter "+t+" constants");
+		for(int i=0;i<t;i++)
+        {
+			try
+            {
+                long x=sc.nextLong();
+                System.out.println(x+" can be fitted in:");
+                if(x>=-128 && x<=127){
+                    System.out.println("* byte");
+                }
+                if(x>=-32768 && x<=32767){
+                    System.out.println("* short");
+                }
+                if(x>=-2147483648 && x<=2147483647){
+                    System.out.println("* int");
+                }
+                if(x>=Long.MIN_VALUE && x<=Long.MAX_VALUE){
+                    System.out.println("* long");
+                }
+            }
+            catch(Exception e)
+            {
+                System.out.println(sc.next()+" can't be fitted anywhere.");
+            }
+
+        }
+        sc.close();
+    }
+}
+
+//Output//
+Enter No of data constants
+6
+Enter 6 constants
+1
+1 can be fitted in:
+* byte
+* short
+* int
+* long
+150
+150 can be fitted in:
+* short
+* int
+* long
+456787
+456787 can be fitted in:
+* int
+* long
+214567867
+214567867 can be fitted in:
+* int
+* long
+2456789875456
+2456789875456 can be fitted in:
+* long
+123456789098765431235678990897
+123456789098765431235678990897 can't be fitted anywhere.
+Press any key to continue . . .
